@@ -4,12 +4,15 @@ header {
     width: 100%;
     height: 80px;
     background-color: #00c0d4;
+    padding-left: 10px;
 }
 
 #main {
     display: grid;
     grid-template-columns: [nav] 200px [article] auto [aside] 200px [last];
     margin-top: 80px;
+    width: 100%;
+    margin-bottom: 80px;
 }
 
 nav {
@@ -32,4 +35,7 @@ aside {
 footer {
     background-color: #00c0d4;
     height: 80px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
 }
