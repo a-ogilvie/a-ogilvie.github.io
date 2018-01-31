@@ -1,0 +1,23 @@
+article, header, nav, aside, footer {
+    border: 1px solid red;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: [nav] 200px [article] auto [aside] 200px [last]; 
+}
+
+nav {
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+article {
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+aside {
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
