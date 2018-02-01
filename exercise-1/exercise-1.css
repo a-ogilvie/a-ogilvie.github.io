@@ -8,28 +8,34 @@ header {
 }
 
 #main {
-    display: grid;
-    grid-template-columns: [nav] 200px [article] auto [aside] 200px [last];
+    display: flex;
+    flex-direction: row;
+    /* grid-template-columns: [nav] 200px [article] auto [aside] 200px [last]; */
     margin-top: 80px;
     width: 100%;
     margin-bottom: 80px;
 }
 
 nav {
-    grid-column-start: nav;
-    grid-row-start: 1;
+ /*    grid-column-start: nav;
+    grid-row-start: 1; */
     background-color: #3d51b5;
+    order: 0;
+    flex: 0 0 200px;
 }
 
 article {
-    grid-column-start: article;
-    grid-row-start: 1;
+  /*   grid-column-start: article;
+    grid-row-start: 1; */
+    order: 1;
 }
 
 aside {
-    grid-column-start: aside;
-    grid-row-start: 1;
+    /* grid-column-start: aside;
+    grid-row-start: 1; */
     background-color: #3d51b5;
+    order: 2;
+    flex: 0 0 200px;
 }
 
 footer {
