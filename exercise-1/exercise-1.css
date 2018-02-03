@@ -1,9 +1,12 @@
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
+header, footer {
     height: 80px;
+    position: fixed;
     background-color: #00c0d4;
+    width: 100%;
+}
+
+header {
+    top: 0;
     padding-left: 10px;
 }
 
@@ -12,36 +15,33 @@ header {
     flex-direction: row;
     /* grid-template-columns: [nav] 200px [article] auto [aside] 200px [last]; */
     margin-top: 80px;
-    width: 100%;
     margin-bottom: 80px;
 }
 
-nav {
- /*    grid-column-start: nav;
-    grid-row-start: 1; */
+nav, aside {
     background-color: #3d51b5;
-    order: 0;
     flex: 0 0 200px;
 }
 
+nav {
+    /* grid-column-start: nav;
+    grid-row-start: 1; */
+    order: 0;
+}
+
 article {
-  /*   grid-column-start: article;
+    /* grid-column-start: article;
     grid-row-start: 1; */
     order: 1;
+    flex: 1;
 }
 
 aside {
     /* grid-column-start: aside;
     grid-row-start: 1; */
-    background-color: #3d51b5;
     order: 2;
-    flex: 0 0 200px;
 }
 
 footer {
-    background-color: #00c0d4;
-    height: 80px;
-    width: 100%;
-    position: fixed;
     bottom: 0;
 }
