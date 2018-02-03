@@ -1,0 +1,47 @@
+* {border: 1px solid red;}
+
+#main {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 50px 500px 100px;
+    width: 100%;
+    grid-template-areas:
+        "name name . . . . button1 button2"
+        "text text text text text text text text"
+        "bottom1 bottom1 bottom2 bottom2 bottom3 bottom3 bottom4 bottom4";
+    /* margin: 50px 100px; */
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+}
+
+#title {
+    grid-area: name;
+}
+
+#button1 {
+    grid-area: button1;
+}
+
+#button2 {
+    grid-area: button2;
+}
+
+#description {
+    grid-area: text;
+}
+
+#bottom1 {
+    grid-area: bottom1;
+}
+
+#bottom2 {
+    grid-area: bottom2;
+}
+
+#bottom3 {
+    grid-area: bottom3;
+}
+
+#bottom4 {
+    grid-area: bottom4;
+}
