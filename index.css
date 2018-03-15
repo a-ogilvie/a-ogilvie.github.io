@@ -16,7 +16,7 @@ body {
     grid-template-areas:
         "name name button button button button button button"
         "text text text text text text text text"
-        "bottom1 bottom1 bottom2 bottom2 bottom3 bottom3 bottom4 bottom4";
+        "bottom-panels bottom-panels bottom-panels bottom-panels bottom-panels bottom-panels bottom-panels bottom-panels";
     padding: 50px 100px;
     grid-column-gap: 10px;
     grid-row-gap: 20px;
@@ -79,32 +79,23 @@ body {
     text-align: justify;
 }
 
+#bottom-panels {
+    display: flex;
+    justify-content: space-between;
+    grid-area: bottom-panels;
+}
+
 .bottom {
     background-color: black;
     color: white;
     padding: 2px 5px;
+    width: calc(25% - 20px)
 }
 
 .emoji {
     font-size: 50px;
     text-align: center;
     padding-top: 5px;
-}
-
-#bottom1 {
-    grid-area: bottom1;
-}
-
-#bottom2 {
-    grid-area: bottom2;
-}
-
-#bottom3 {
-    grid-area: bottom3;
-}
-
-#bottom4 {
-    grid-area: bottom4;
 }
 
 footer {
